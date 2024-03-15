@@ -80,6 +80,11 @@ $(document).ready(function() {
         }
     });
 
+    $("#resetBtn").click(function() {
+        $(".text-on-image").remove(); // 텍스트 박스 제거
+        $(".text-container").hide(); // 텍스트 입력 창 숨기기
+    });
+
 });
 
 
