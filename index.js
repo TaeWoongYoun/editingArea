@@ -18,12 +18,10 @@ $(document).ready(function() {
         });
         input.click();
     });
-
     // 텍스트 입력 버튼 클릭 시
     $("#textBoxBtn").click(function() {
         $(".text-container").show();
     });
-
     // 텍스트 추가 버튼 클릭 시
     $("#addTextBtn").click(function() {
         var text = $("#textInput").val();
@@ -34,11 +32,9 @@ $(document).ready(function() {
             $(".text-container").hide();
         }
     });
-
     // 글상자 이동 및 회전 버튼 클릭 시
     $("#rotateBtn").click(function() {
         $(".text-on-image").toggleClass("rotate");
-
         // 마우스 좌측버튼을 클릭하고 드래그하여 글상자를 이동할 때
         $(document).on("mousedown", ".text-on-image", function(event) {
             isDragging = true;
@@ -47,12 +43,10 @@ $(document).ready(function() {
             initialLeft = $(this).position().left;
             initialTop = $(this).position().top;
         });
-
         // 마우스를 떼면 드래그를 중지합니다.
         $(document).on("mouseup", function() {
             isDragging = false;
         });
-
         // 마우스를 이동하면서 드래그한 경우 글상자를 이동합니다.
         $(document).on("mousemove", function(event) {
             if (isDragging) {
@@ -91,7 +85,4 @@ $(document).ready(function() {
         $(".text-on-image").remove(); // 텍스트 박스 제거
         $(".text-container").hide(); // 텍스트 입력 창 숨기기
     });
-
 });
-
-
