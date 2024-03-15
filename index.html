@@ -11,17 +11,21 @@
     
     <div class="goods">
         <div class="btn">
-            <button>편집영역</button>
-            <button>원래대로버튼</button>
+            <button id="resetBtn">원래대로버튼</button>
             <button id="addBtn">추가버튼</button>
-            <button>삭제버튼</button>
-            <button>다운로드버튼</button>
-            <button>글상자버튼</button>
-            <button>글상자 이동 및 회전버튼</button>
+            <button id="deleteBtn">삭제버튼</button>
+            <button id="downloadBtn">다운로드버튼</button>
+            <button id="textBoxBtn">글상자버튼</button>
+            <button id="rotateBtn">글상자 이동 및 회전버튼</button>
         </div>
         <div class="area">
             <h2>편집영역</h2>
         </div>
+    </div>
+
+    <div class="text-container">
+        <textarea id="textInput" placeholder="텍스트를 입력하세요..."></textarea><br>
+        <button id="addTextBtn">추가</button>
     </div>
 
     <script src="index.js"></script>
