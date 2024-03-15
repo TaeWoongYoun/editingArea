@@ -85,6 +85,13 @@ $(document).ready(function() {
         $(".text-container").hide(); // 텍스트 입력 창 숨기기
     });
 
+        // 삭제 버튼 클릭 시
+    $("#deleteBtn").click(function() {
+        $(".image-container").remove(); // 이미지 및 텍스트 컨테이너 제거
+        $(".text-on-image").remove(); // 텍스트 박스 제거
+        $(".text-container").hide(); // 텍스트 입력 창 숨기기
+    });
+
 });
 
 
