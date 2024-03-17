@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // 이미지 추가 버튼 클릭 시
+    // 추가 버튼 클릭 시
     $("#addBtn").click(function() {
         var input = $("<input>").attr({
             type: "file",
@@ -18,7 +18,7 @@ $(document).ready(function() {
         });
         input.click();
     });
-    // 텍스트 입력 버튼 클릭 시
+    // 글상자 버튼 클릭 시
     $("#textBoxBtn").click(function() {
         $(".text-container").show();
     });
@@ -73,7 +73,7 @@ $(document).ready(function() {
             });
         }
     });
-
+    // 원래대로버튼 클릭 시
     $("#resetBtn").click(function() {
         $(".text-on-image").remove(); // 텍스트 박스 제거
         $(".text-container").hide(); // 텍스트 입력 창 숨기기
